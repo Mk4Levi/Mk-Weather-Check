@@ -46,15 +46,6 @@ app.post("/", function (req, res) {
       let icon = weatherData.weather[0].icon;
       let imageURL = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       const temperatureColor = getTemperatureColor(temp);
-      // res.write(
-      //   "<h1>The Temperature of " +
-      //     query +
-      //     " is " +
-      //     temp +
-      //     " degree celcius.</h1>"
-      // );
-      // res.write("The weather is currently : " + weatherDescription);
-      // res.write("<img src=" + imageURL + ">");
 
       res.write(`<!DOCTYPE html>
                     <html>
