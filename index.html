@@ -7,29 +7,129 @@
     <title>MK-Weather App</title>
     <link
       rel="shortcut icon"
-      href="public/images/MK-White_Logo.png"
+      href="./images/MK-White_Logo.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-      * {
+      html {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        background-image: url("https://images.unsplash.com/photo-1537210249814-b9a10a161ae4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwODE1Njh8&ixlib=rb-4.0.3&q=85");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat;
+        font-family: sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        padding: 20px;
+      }
+
+      .heading {
+        font-size: 1.5rem;
+        font-weight: bold;
         text-align: center;
+        color: #f7f7f7;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem 0;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      label,
+      input {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      label {
+        color: #333;
+        text-align: center;
+        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+      }
+
+      input {
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 2px solid #333;
+        width: 100%;
+        text-align: center;
+        background-color: transparent;
+      }
+
+      input:focus {
+        outline: none;
+        border-bottom: 2px solid #0080ff;
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: none;
+        border-radius: 20px;
+        background-color: #0080ff;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+      }
+
+      button:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+      }
+
+      .footer {
+        margin-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+        color: #6b0099;
+        /* font-weight: bolder; */
+      }
+
+      .footer a {
+        color: #383838;
+        font-weight: bold;
+        transition: all 0.2s;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1><u>MK-Weather App</u></h1>
-    </header>
-    <form action="/" method="post">
-      <label for="cityInput">City Name :</label>
-      <input
-        id="cityInput"
-        type="text"
-        name="cityName"
-        placeholder="Enter City Name"
-      />
-      <button type="submit">Let's Go</button>
-    </form>
+    <div class="container">
+      <header class="heading">
+        <h1><u>MK-Weather App</u></h1>
+      </header>
+      <form action="/" method="post">
+        <label for="cityInput"><b>Enter your City Name :</b></label>
+        <input
+          id="cityInput"
+          type="text"
+          name="cityName"
+          placeholder="e.g. Mumbai"
+          required
+        />
+        <button type="submit"><b>Get Weather</b></button>
+      </form>
+      <p class="footer">Manthan-MK</p>
+    </div>
   </body>
 </html>
