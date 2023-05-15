@@ -1,11 +1,11 @@
-body {
+html {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  background-image: url("http://surl.li/gsbuj");
+  background-image: url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxNDI0NzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQwODc1ODd8&ixlib=rb-4.0.3&q=80&w=1080");
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: repeat;
   font-family: sans-serif;
 }
 
@@ -15,10 +15,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  padding: 20px;
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   color: #f7f7f7;
@@ -84,14 +85,15 @@ button:hover {
 }
 
 .footer {
-  margin-top: 3rem;
-  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-size: 1rem;
   text-align: center;
-  color: #e3e3e3;
+  color: #6b0099;
+  /* font-weight: bolder; */
 }
 
 .footer a {
-  color: #e0e0e0;
+  color: #383838;
   font-weight: bold;
   transition: all 0.2s;
 }
