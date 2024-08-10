@@ -2,7 +2,7 @@
 
 ## Website Link => https://manthan-weather-check.onrender.com/
 
-=> This is a Weather Application. In this web-app, You can check weather report of any city in the world.
+=> This is a Weather-Report App developed by using Express.js and Fetch-API. Enter the name of any city and it will show you the Weather Report from OpenWeather API.
 
 <h2>Getting Started</h2>
 
